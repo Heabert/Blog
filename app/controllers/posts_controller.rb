@@ -7,4 +7,4 @@ class PostsController < ApplicationController
     id = params[:id]
     @posts = Post.find(id)
   end
-  end
+end
