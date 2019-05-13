@@ -19,15 +19,17 @@
 
     <nav class="navbar navbar-inverse">
       <section class="container">
-          <header class="navbar-header">
+              </header class="navbar-header">
               <a href="home.html" class="navbar-brand"></a>
           </header>
-
+      </section>
+    </nav>
+    <div>
         <div class = "row"> <!-- Form -->
             <div class = "col-md-8">
 
               <div class = "col-md-8 panel panel-default">
-                  <form>
+
                       <br />
                       <div class = "form-group">
                         <div class="btn-group" role="group" aria-label="...">
@@ -47,9 +49,9 @@
                         <div class="form-group">
                           <div class="field">
                             <%= f.label :email %><br />
-                            <%= f.email_field :email, autofocus: true, autocomplete: "email" %>                          </div>
+                            <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+                          </div>
                         </div>
-
                         <div class="form-group">
                           <div class="field">
                             <%= f.label :password %>
@@ -71,22 +73,20 @@
                       </div>
                       <br />
                         <p class = "align-center">By registering, you agree to the <a href = "" target = "blank">privacy policy</a> and <a href = "" target = "blank">terms of service</a>.</p>
-                  </form>
+
               </div>
             </div>
         </div>
-      </section>
-    </nav>
 
-        <p class = "align-center">Already have an account? <a href = "<%= render "devise/shared/links" %>"> </a></p>
+          <p class = "align-center">Already have an account? <a href = "<%= render "devise/shared/links" %>"> </a></p>
   <% end %>
       </div>
     </div> <!-- End form -->
+</div>
 
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-  </body>
+
+</body>
 </html>
