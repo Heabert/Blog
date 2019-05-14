@@ -1,3 +1,20 @@
 <% content_for :page_title, "Create a new post" %>
 
-<% render 'form' %>
+<div class="section">
+  <%= form_for Post.new do |f| %>
+    <div class="field">
+
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+
+    </div>
+    <div class="field">
+
+        <%= f.label :content %>
+        <%= f.text_field :content %>
+
+    </div>
+    <div class="actions"><%= f.submit "Create", class: "button is-primary"%></div>
+
+  <%end%>
+</div>
